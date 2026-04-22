@@ -1,0 +1,15 @@
+[theme]
+# Cor primária (Botões, destaques, caixinhas) - Um verde esmeralda elegante e esportivo
+primaryColor = "#27AE60"
+
+# Fundo principal - Branco puro para máxima clareza na leitura dos relatórios
+backgroundColor = "#FFFFFF"
+
+# Fundo secundário (Barra lateral e fundos de tabela) - Um cinza super claro e moderno
+secondaryBackgroundColor = "#F4F6F8"
+
+# Cor do texto - Cinza chumbo/ardósia (mais suave e chique que o preto absoluto)
+textColor = "#2C3E50"
+
+# Fonte limpa e profissional
+font = "sans serif"

@@ -1,0 +1,37 @@
+ID,Nome,Data_Nascimento,Telefone,Turma,Periodo,Graduacao,Observacoes,Perfil_Financeiro,Desconto_Percentual,Valor_Base,Ativo
+1, João Paulo Louzada Carvalho ,2019-06-29,,1º Ano EF I,Matutino,Branca,,Normal,0.0,102.67,True
+2,Vitor Borges Rebello,2019-06-12,,1º Ano EF I,Matutino,Branca,,Normal,0.0,102.67,True
+3,João Pedro Coelho Torres,2010-10-11,,1º Ano EM,Integral,Branca,,Normal,0.0,102.67,True
+4,Francisco Alves Batista Moreira,2018-12-17,,2º Ano EF I,Matutino,Branca,,Normal,0.0,102.67,True
+5,Lucas Gatto Chierichetti,2018-09-12,,2º Ano EF I,Vespertino,Branca,,Normal,0.0,102.67,True
+6,Tiago Henrique Carvalho de Souza,2017-11-13,,3º Ano EF I,Matutino,Branca,,Bolsista,100.0,0.0,True
+7,Luís Fernando Santana Lopes,2008-05-10,,3º Ano EM,Integral,Branca,,Normal,0.0,102.67,True
+8,Isabela Souza Zancanaro,2014-11-24,,6º Ano EF II,Matutino,Branca,,Normal,0.0,102.67,True
+9,Leonardo Délio Versiani Queiroz,2014-09-28,,6º Ano EF II,Vespertino,Branca,,Normal,0.0,90.0,False
+10,Maria Alice Ferreira Trindade,2015-02-09,,6º Ano EF II,Matutino,Branca,,Normal,0.0,102.67,True
+11,Ana Luiza Araújo Vieira,2010-01-01,,7º Ano EF II,Matutino,Branca,,Normal,0.0,102.67,True
+12,Beatriz Alves Batista Moreira,2014-07-31,,7º Ano EF II,Vespertino,Branca,,Normal,0.0,102.67,True
+13,Bernardo Branquinho Caxito,2014-02-15,,7º Ano EF II,Vespertino,Branca,,Normal,0.0,102.67,True
+14,Gustavo Machado Alves,2013-03-22,,7º Ano EF II,Vespertino,Branca,,Normal,0.0,102.67,True
+15,Heloísa Vaz Lepesqueur Brochado,2014-07-01,,7º Ano EF II,Vespertino,Branca,,Normal,0.0,102.67,True
+16,Julia Campos Brostel,2013-10-01,,7º Ano EF II,Matutino,Branca,,Normal,0.0,102.67,True
+17,Otávio Dias da Silva,2013-11-21,,7º Ano EF II,Vespertino,Branca,,Normal,0.0,102.67,True
+18,Vítor Hugo Silva Sousa,2014-01-25,,7º Ano EF II,Vespertino,Branca,,Bolsista,100.0,0.0,True
+19,Emanuela Macedo Borges,2013-09-14,,7º Ano EF II,Matutino,Branca,,Normal,0.0,102.67,True
+20,Lucas Vinícius de Oliveira Pereira,2013-04-07,,8º Ano EF II,Matutino,Branca,,Normal,0.0,102.67,True
+21,Matheus Felipe Santana Lopes,2011-08-27,,8º Ano EF II,Vespertino,Branca,,Normal,0.0,102.67,True
+22,Vinicius Ferraz Guimarães Gaia,2013-07-23,,8º Ano EF II,Matutino,Branca,,Normal,0.0,102.67,True
+23,Daian Cristiano Boerman,2011-12-12,,9º Ano EF II,Matutino,Branca,,Normal,0.0,102.67,True
+24,Filipe Emanuel Morais,2011-06-11,,1º Ano EM,Integral,Amarela,,Normal,0.0,102.67,True
+25,Fernando de Sousa Gondim,2012-02-21,,9º Ano EF II,Matutino,Branca,,Normal,0.0,102.67,True
+26,Kesley de Andrade Maciel,2011-07-27,,9º Ano EF II,Matutino,Branca,,Normal,0.0,102.67,True
+27,Luís Fernando Ribeiro de Paula Oliveira,2013-02-25,,9º Ano EF II,Matutino,Branca,,Normal,0.0,102.67,True
+28,Miguel Ferreira Trindade,2011-10-14,,9º Ano EF II,Matutino,Branca,,Normal,0.0,102.67,True
+29,Pedro Morais Alves Barbosa,2012-03-04,,9º Ano EF II,Matutino,Branca,,Normal,0.0,102.67,True
+30,Renato Marrafon Gonçalves,2011-11-03,,9º Ano EF II,Matutino,Branca,,Normal,0.0,102.67,True
+31,João Vitor Macedo Borges,2010-01-01,,Jardim II,Matutino,Branca,É preciso ficar extremamente atendo com esse aluno! Apresenta comportamento obsceno e muita agitação durante as aulas.,Normal,0.0,102.67,True
+32,Stela Canto Scherer,2014-06-28,,6º Ano EF II,Matutino,Branca,,Normal,0.0,102.67,True
+33,Ana Luisa Borges Rebello,2014-04-18,,7º Ano EF II,Matutino,Branca,,Normal,0.0,102.67,True
+34,Lucas de Lima Nunes,2010-07-01,,1º Ano EM,Integral,Branca,,Normal,0.0,102.67,True
+35,Davi Lucas Fernandes de Melo Franco,2012-06-23,,9º Ano EF II,Matutino,Amarela,,Normal,0.0,102.67,True
+36,Jubileu,2015-01-01,,Jardim I,Matutino,Branca,,Normal,0.0,200.0,False

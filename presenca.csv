@@ -1,0 +1,34 @@
+Data,Aluno_ID,Nome,Turma,Status_Aula
+2026-03-31 00:00:00,3,João Pedro Coelho Torres,1º Ano EM,Normal
+2026-03-31 00:00:00,6,Tiago Henrique Carvalho de Souza,3º Ano EF I,Normal
+2026-03-31 00:00:00,8,Isabela Souza Zancanaro,6º Ano EF II,Normal
+2026-03-31 00:00:00,10,Maria Alice Ferreira Trindade,6º Ano EF II,Normal
+2026-03-31 00:00:00,11,Ana Luiza Araújo Vieira,7º Ano EF II,Normal
+2026-03-31 00:00:00,13,Bernardo Branquinho Caxito,7º Ano EF II,Normal
+2026-03-31 00:00:00,19,Emanuela Macedo Borges,7º Ano EF II,Normal
+2026-03-31 00:00:00,23,Daian Cristiano Boerman,9º Ano EF II,Normal
+2026-03-31 00:00:00,26,Kesley de Andrade Maciel,9º Ano EF II,Normal
+2026-03-31 00:00:00,28,Miguel Ferreira Trindade,9º Ano EF II,Normal
+2026-03-31 00:00:00,29,Pedro Morais Alves Barbosa,9º Ano EF II,Normal
+2026-03-31 00:00:00,32,Stela Canto Scherer,6º Ano EF II,Experimental
+,1, João Paulo Louzada Carvalho ,1º Ano EF I,Normal
+,5,Lucas Gatto Chierichetti,2º Ano EF I,Normal
+,7,Luís Fernando Santana Lopes,3º Ano EM,Normal
+,16,Julia Campos Brostel,7º Ano EF II,Experimental
+,20,Lucas Vinícius de Oliveira Pereira,8º Ano EF II,Experimental
+,21,Matheus Felipe Santana Lopes,8º Ano EF II,Normal
+,22,Vinicius Ferraz Guimarães Gaia,8º Ano EF II,Experimental
+,26,Kesley de Andrade Maciel,9º Ano EF II,Normal
+,27,Luís Fernando Ribeiro de Paula Oliveira,9º Ano EF II,Normal
+,31,João Vitor Macedo Borges,Jardim II,Normal
+,1, João Paulo Louzada Carvalho ,1º Ano EF I,Normal
+,5,Lucas Gatto Chierichetti,2º Ano EF I,Normal
+,7,Luís Fernando Santana Lopes,3º Ano EM,Normal
+,16,Julia Campos Brostel,7º Ano EF II,Experimental
+,20,Lucas Vinícius de Oliveira Pereira,8º Ano EF II,Experimental
+,21,Matheus Felipe Santana Lopes,8º Ano EF II,Normal
+,22,Vinicius Ferraz Guimarães Gaia,8º Ano EF II,Experimental
+,26,Kesley de Andrade Maciel,9º Ano EF II,Normal
+,27,Luís Fernando Ribeiro de Paula Oliveira,9º Ano EF II,Experimental
+,31,João Vitor Macedo Borges,Jardim II,Normal
+2026-04-01,5,Lucas Gatto Chierichetti,2º Ano EF I,Normal
