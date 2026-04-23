@@ -11,8 +11,11 @@ def get_all_students_raw():
         # Tenta ler a tabela direto da nuvem
         df = pd.read_sql_table("alunos", con=conn.engine)
         return df
-    except Exception:
-        # Se a tabela não existir (primeiro uso), cria a estrutura na memória
+    except Exception as e:
+        # --- O DEDO-DURO (Mostra o erro real na tela) ---
+        st.error(f"🚨 ERRO NA LEITURA DE ALUNOS: {e}")
+        
+        # Retorna a estrutura na memória
         return pd.DataFrame(columns=[
             "ID", "Nome", "Data_Nascimento", "Telefone", "Turma", "Periodo", 
             "Graduacao", "Observacoes", "Perfil_Financeiro", "Desconto_Percentual", 
@@ -44,7 +47,10 @@ def get_attendance():
         if not df.empty and 'Data' in df.columns:
             df['Data'] = pd.to_datetime(df['Data'], format='mixed', errors='coerce')
         return df
-    except Exception:
+    except Exception as e:
+        # --- O DEDO-DURO (Mostra o erro real na tela) ---
+        st.error(f"🚨 ERRO NA LEITURA DE PRESENÇAS: {e}")
+        
         return pd.DataFrame(columns=["Data", "Aluno_ID", "Nome", "Turma", "Status_Aula", "Alerta", "Observacao"])
 
 def save_attendance(df):
