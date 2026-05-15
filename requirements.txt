@@ -3,3 +3,5 @@ plotly
 fpdf
 SQLAlchemy
 psycopg2-binary
+python-docx
+openpyxl
