@@ -17,6 +17,9 @@ def render():
     LISTA_GRADUACOES = ["Branca", "Cinza", "Amarela", "Laranja", "Verde", "Azul", "Roxa", "Marrom", "Preta"]
     LISTA_PERFIS = ["Normal", "Bolsista", "Com Desconto"]
 
+    # ==========================================
+    # ABA 1: NOVO ALUNO
+    # ==========================================
     with tab1:
         with st.form("form_novo_aluno", clear_on_submit=True):
             st.subheader("Dados Pessoais e Escolares")
@@ -27,7 +30,7 @@ def render():
                 data_nasc = st.date_input(
                     "Data de Nascimento", 
                     value=datetime(2015, 1, 1),
-                    min_value=datetime(1940, 1, 1), # Corrigido: Permite datas bem antigas
+                    min_value=datetime(1940, 1, 1),
                     max_value=datetime.now()
                 )
             with colB:
@@ -69,6 +72,9 @@ def render():
                 else:
                     st.error("O campo Nome é obrigatório.")
 
+    # ==========================================
+    # ABA 2: MANUTENÇÃO (EDIÇÃO DE ALUNO)
+    # ==========================================
     with tab2:
         df_ativos = get_students()
         if not df_ativos.empty:
@@ -79,6 +85,35 @@ def render():
             with st.form("form_edicao"):
                 enome = st.text_input("Nome", value=dados['Nome'])
                 
+                # --- Tratamento seguro para Data de Nascimento e Telefone antigos ---
+                colA_e, colB_e = st.columns(2)
+                
+                with colA_e:
+                    # Tenta converter a data existente. Se estiver vazia ou der erro, usa 01/01/2015
+                    try:
+                        raw_date = dados.get('Data_Nascimento', None)
+                        if pd.isna(raw_date):
+                            data_padrao = datetime(2015, 1, 1).date()
+                        elif isinstance(raw_date, str):
+                            data_padrao = pd.to_datetime(raw_date).date()
+                        else:
+                            data_padrao = raw_date.date() if hasattr(raw_date, 'date') else pd.to_datetime(raw_date).date()
+                    except:
+                        data_padrao = datetime(2015, 1, 1).date()
+
+                    edata_nasc = st.date_input(
+                        "Data de Nascimento",
+                        value=data_padrao,
+                        min_value=datetime(1940, 1, 1),
+                        max_value=datetime.now()
+                    )
+                
+                with colB_e:
+                    tel_atual = str(dados.get('Telefone', ''))
+                    if tel_atual.lower() == 'nan':
+                        tel_atual = ""
+                    etelefone = st.text_input("WhatsApp", value=tel_atual)
+
                 c1, c2, c3 = st.columns(3)
                 try: idx_turma = LISTA_TURMAS.index(dados['Turma'])
                 except ValueError: idx_turma = 0
@@ -123,7 +158,11 @@ def render():
                     df_full['Nome'] = df_full['Nome'].astype(str)
                     
                     idx = df_full[df_full['ID'] == dados['ID']].index[0]
-                    df_full.loc[idx, ['ID', 'Nome', 'Turma', 'Periodo', 'Graduacao', 'Observacoes', 'Perfil_Financeiro', 'Desconto_Percentual', 'Valor_Base', 'Ativo']] = [dados['ID'], enome, eturma, eperiodo, egrad, eobs, eperfil, edesconto, evalor_base, True]
+                    
+                    # Atualiza a linha com as novas colunas (Data_Nascimento e Telefone inclusas)
+                    df_full.loc[idx, ['ID', 'Nome', 'Data_Nascimento', 'Telefone', 'Turma', 'Periodo', 'Graduacao', 'Observacoes', 'Perfil_Financeiro', 'Desconto_Percentual', 'Valor_Base', 'Ativo']] = [
+                        dados['ID'], enome, edata_nasc, etelefone, eturma, eperiodo, egrad, eobs, eperfil, edesconto, evalor_base, True
+                    ]
                     
                     df_full['Observacoes'] = df_full['Observacoes'].replace('nan', '')
                     
